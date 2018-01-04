@@ -1,0 +1,11 @@
+<div class="row no-gutters">
+  <div class="col-2">
+    <button (click)="removeFromCart()" class="btn btn-danger btn-block"><i class="fa fa-minus" aria-hidden="true"></i></button>
+   </div>
+   <div class="col text-center"> Item in Cart
+       {{shoppingCart.getQuantity(product)}} 
+   </div>
+   <div class="col-2">
+       <button (click)="addTocart()"  class="btn btn-warning btn-block"><span style="color:white"><i class="fa fa-cart-plus" aria-hidden="true"></i></span></button>
+   </div>
+</div>
